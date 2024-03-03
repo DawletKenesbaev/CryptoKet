@@ -1,10 +1,12 @@
+'use client'
 import React from 'react'
+import { ThemeProvider } from "next-themes";
 import Footer from '@/components/Footer'
 import  Navbar  from '../../components/Navbar'
 const Layout = ({children}:{children:React.ReactNode}) => {
   return (
-    <div>
-       <Navbar />
+      <ThemeProvider attribute='class'>
+      <Navbar />
         <div className='flex'>
            <section >
                <div className='mx-auto w-full  max-w-5xl '>
@@ -13,7 +15,7 @@ const Layout = ({children}:{children:React.ReactNode}) => {
            </section>
         </div>
         <Footer />
-    </div>
+      </ThemeProvider>
   )
 }
 
