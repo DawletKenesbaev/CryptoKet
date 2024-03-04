@@ -14,14 +14,16 @@ const ButtonGroup = ({setActive,router}:Props) => {
         setActive('')
         router.push('/create-nft')
     }}
-     btnName='Create' classStyles='' />
+     btnName='Create' 
+     classStyles='' />
   ): (
     <Button
     handleClick={()=>{
         setActive('')
         router.push('/create-nft')
     }}
-     btnName='Connect' classStyles='' />
+     btnName='Connect' 
+     classStyles='' />
   )
 }
 
