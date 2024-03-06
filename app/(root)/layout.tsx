@@ -7,13 +7,11 @@ const Layout = ({children}:{children:React.ReactNode}) => {
   return (
       <ThemeProvider attribute='class'>
       <Navbar />
-        <div className='flex'>
-           <section >
-               <div className='mx-auto w-full  max-w-5xl '>
+           <section>
+               <div className='mx-auto w-full max-w-5xl '>
                 {children}
                </div  >
            </section>
-        </div>
         <Footer />
       </ThemeProvider>
   )

@@ -4,7 +4,7 @@ import Button from './Button'
 import { NextRouter } from 'next/router';
 interface Props {
     setActive : (newActive: string) => void;
-    router:NextRouter;
+    router:NextRouter ;
 }
 const ButtonGroup = ({setActive,router}:Props) => {
   const hasConnected = true

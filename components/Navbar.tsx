@@ -51,7 +51,7 @@ const Navbar = () => {
              <i  className='fas fa-moon' />
              <div className='ball absolute  size-3 rounded-full bg-white' />
            </label>
-        </div> 
+        </div>
         <div className='flex md:hidden'>
            <MenuItems isMobile={false} active={active} setActive={setActive} />
            <div className='ml-4'>
