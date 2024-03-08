@@ -7,7 +7,7 @@ interface Props {
 const Banner = ({parentStyles,childStyles,banner}:Props) => {
   return (
       <div className={`nft-gradient relative top-11 z-0 flex w-full items-center overflow-hidden
-      ${parentStyles}`}>
+      ${parentStyles} `}>
         <p className={` font-poppins text-5xl  font-bold leading-70 ${childStyles} `}>
           {banner}
           </p>

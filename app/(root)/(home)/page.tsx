@@ -40,7 +40,7 @@ export default function Home() {
   // })
   
   return (
-    <div className="flex justify-center p-12 sm:px-4">
+    <div className="flex flex-col justify-center p-12 sm:p-4">
       <div className="w-full minmd:w-4/5">
         <Banner
           banner="Discover, Collect and Sell Extraordinary NFT's"
@@ -50,16 +50,16 @@ export default function Home() {
         <div>
           <h1 className="ml-4 font-poppins  text-2xl font-semibold text-nft-black-1 dark:text-white 
           xs:ml-0 minlg:text-4xl">Top Sellers</h1>
-          <div className="relative mt-3 flex max-w-full flex-1 " >
-             <div className="no-scrollbar flex w-max select-none flex-row overflow-x-scroll">
-                {[3,4,5,6,7,8,9].map((user)=>(
+          <div className="relative mt-3 flex flex-1 " >
+             <div className="no-scrollbar flex w-full select-none flex-row ">
+                {[3,4,5,6,7].map((user)=>(
                   <CreatorCard
                    key={`creator-${user}`} 
                   rank={user}
                   creatorImg={img} 
                   creatorName= {`0x${makeId(3)}...${makeId(4)}`}
                   creatorEths ={10-user*0.5}
-                  />
+                  /> 
                 ))}                                
              </div>
           </div>

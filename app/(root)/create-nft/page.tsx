@@ -1,3 +1,4 @@
+'use client'
 import React, { FC, useCallback, useContext, useMemo, useState } from 'react';
 import { useRouter } from 'next/router';
 import { useDropzone } from 'react-dropzone';
@@ -53,8 +54,15 @@ const CreateNFT: FC = () => {
   );
 
   return (
-    
-    // Rest of the component JSX remains the same with type annotations for props and state
+     <div className='flex items-center justify-center p-12  sm:px-4 '>
+       <div className='mt-16 w-3/5  md:w-full'>
+         <h1 className="ml-4 font-poppins  text-2xl font-semibold text-nft-black-1 dark:text-white 
+          xs:ml-0 minlg:text-4xl">Create new item</h1>
+          <div className='mt-16'>
+             <p>dd</p>
+          </div>
+       </div>
+     </div>
   )
 };
 

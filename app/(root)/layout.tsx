@@ -7,7 +7,7 @@ const Layout = ({children}:{children:React.ReactNode}) => {
   return (
       <ThemeProvider attribute='class'>
       <Navbar />
-           <section>
+           <section className='pt-65'>
                <div className='mx-auto w-full max-w-5xl '>
                 {children}
                </div  >
